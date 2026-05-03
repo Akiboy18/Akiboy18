@@ -1,0 +1,38 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="800" height="300" fill="black"/>
+
+  <!-- Beam -->
+  <path d="M120 60 L680 250"
+        stroke="#00f7ff"
+        stroke-width="2"
+        stroke-dasharray="6"
+        fill="none">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Main Signal -->
+  <path d="M0 180 Q 60 120, 120 180 T 240 180 T 360 180 T 480 180 T 600 180 T 720 180 T 800 180"
+        stroke="#00f7ff"
+        stroke-width="2"
+        fill="none"
+        stroke-dasharray="6">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Multipath -->
+  <path d="M0 180 Q 60 240, 120 180 T 240 180 T 360 180 T 480 180 T 600 180 T 720 180 T 800 180"
+        stroke="#ff00ff"
+        stroke-width="2"
+        fill="none"
+        opacity="0.5"
+        stroke-dasharray="6">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Text -->
+  <text x="40" y="40" fill="#00ff88" font-family="monospace" font-size="14">
+    SIGNAL LOCKED | PLL ACTIVE | SNR 42 dB
+  </text>
+
+</svg>
